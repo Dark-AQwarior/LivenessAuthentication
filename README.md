@@ -3,11 +3,9 @@
  
  ## Pre-requisites and download links
  
- Python - https://www.python.org/downloads/
- 
- PIP
- 
- Anaconda - https://www.anaconda.com/products/individual#Downloads
+ Python - https://www.python.org/downloads/ \
+ PIP \
+ Anaconda - https://www.anaconda.com/products/individual#Downloads \
  
  
  ## Check whether your pip version is up-to-date
