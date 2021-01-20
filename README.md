@@ -9,6 +9,7 @@
  
  
  ## Check whether your pip version is up-to-date
+ See the pip-list.txt file to check all the package versions, which i have installed for my project.
 ```python
 C:\> py -m pip --version
 pip X.Y.Z from ...\site-packages\pip (python X.Y)
