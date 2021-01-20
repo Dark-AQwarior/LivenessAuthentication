@@ -2,7 +2,7 @@
 
  Liveness Authentication, an anti-spoofing liveness detection mechanism distinguishes live person in front of camera from spoofing attacks such as photos, videos or masks also fraud prevention for face detection in general. If the user is un-authorized, the device gets locked and a mail is initiated which includes a snapshot, location, computer name and ip-address of the Intruder. Liveness Authenticator helps you in securing your device in most possible ways.
  
-                               ![Liveness Detecion](https://www.idrnd.ai/wp-content/uploads/2019/08/facespoofing-blog-pic-e1565002975396.png)
+ ![Liveness Detecion](https://www.idrnd.ai/wp-content/uploads/2019/08/facespoofing-blog-pic-e1565002975396.png)
  
  ## Pre-requisites and download links
  
@@ -97,7 +97,8 @@ Make sure you have already navigated to the folder where you have the project fi
 Let's divide the extraction process into 2 steps (real and fake) :
 1.  Fake images extraction:
     > python gather_examples.py --input videos/fake.mp4 --output dataset/fake --detector face_detector --skip 1
-    Your fake images extraction process will begin when you hit enter. Make sure you have a folder named dataset which inturn contains a folder named fake (orelse you may face       errors). 
+    Your fake images extraction process will begin when you hit enter. 
+    Make sure you have a folder named dataset which inturn contains a folder named fake (orelse you may face errors). 
     Wait for the process to complete. Check your "dataset/fake/" folder for images.
 2.  Real images extraction:
     > python gather_examples.py --input videos/real.mp4 --output dataset/real --detector face_detector --skip 4
