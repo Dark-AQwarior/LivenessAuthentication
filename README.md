@@ -49,5 +49,20 @@ Easiest way to create a virtual environment in anaconda is using the ***Anaconda
 ## Activate the anaconda virtual environment
 Open the windows command prompt by searching in windoes search (or) Press "win+R", type cmd, hit enter... And there you gooo...
 ```
-
+activate virtual-env-name
+ex: activate live
 ```
+
+## Install all the required packages in the anaconda virtual environment
+1.  Firstly, Navigate to the github cloned repository folder. 
+    Ex:
+    ```
+    s:
+    cd projects/liveness detection
+    ```
+2.  Install the requirements.txt file, which is already inside the folder. (Check the pip-list.txt file, and install the particular version incase you face any error.)
+    ```
+    pip install -r requirements.txt
+    pipwin install pyaudio
+    ```
+    PyAudio module gives us trouble if we try installing it through the traditional "pip install pyaudio" way. So, just install pyaudio and portaudio using this command: "pipwin     install pyaudio"
