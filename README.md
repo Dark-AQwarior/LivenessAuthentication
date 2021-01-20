@@ -15,6 +15,24 @@
 pip 20.3.3 from D:\Users\LvlyPavi\anaconda3\envs\live\lib\site-packages\pip (python 3.8)
 ```
 
+## Clone/Download my git repository
+```
+1.  On GitHub, navigate to the main page of the repository.
+2.  Above the list of files, click Download Code.
+3.  To clone the repository using HTTPS, under "Clone with HTTPS", click copy symbol.
+4.  Open Git Bash.
+5.  Change the current working directory to the location where you want the cloned directory.
+6.  Type git clone, and then paste the URL you copied earlier.
+        $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+7. Press Enter to create your local clone.
+        $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+        > Cloning into `Spoon-Knife`...
+        > remote: Counting objects: 10, done.
+        > remote: Compressing objects: 100% (8/8), done.
+        > remove: Total 10 (delta 1), reused 10 (delta 1)
+        > Unpacking objects: 100% (10/10), done.
+```
+
 ## Create a Virtual Environment using anaconda
 Easiest way to create a virtual environment in anaconda is using the ***Anaconda Navigator***
 ```
@@ -24,4 +42,10 @@ Easiest way to create a virtual environment in anaconda is using the ***Anaconda
 4.  Click the create option below.
 5.  Just enter a environment name you wish (ex: live), wait a minute, click on create.
 6.  Done. You can close the Anaconda Navigator now.
+```
+
+## Activate the anaconda virtual environment
+Open the windows command prompt by searching in windoes search (or) Press "win+R", type cmd, hit enter... And there you gooo...
+```
+
 ```
