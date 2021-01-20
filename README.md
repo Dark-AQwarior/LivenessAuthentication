@@ -93,9 +93,9 @@ videos is our input folder which we are going to give to the model to train it.
 ```
 
 ## Building OUR ""Dataset""
-```
 As of now, we already have 2 input videos for training. Let's go ahead and extract images from the input videos we have in the videos folder.
 Make sure you have already navigated to the folder where you have the project files.
+```
 Let's divide the extraction process into 2 steps (real and fake) :
 1.  Fake images extraction:
     > python gather_examples.py --input videos/fake.mp4 --output dataset/fake --detector face_detector --skip 1
