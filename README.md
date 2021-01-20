@@ -1,7 +1,7 @@
 # LivenessAuthentication
  Liveness Authentication, an anti-spoofing liveness detection mechanism distinguishes live person in front of camera from spoofing attacks such as photos, videos or masks also fraud prevention for face detection in general. If the user is un-authorized, the device gets locked and a mail is initiated which includes a snapshot, location, computer name and ip-address of the Intruder. Liveness Authenticator helps you in securing your device in most possible ways.
  
- ![Liveness Detecion](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.idmerit.com%2Fblog%2Fliveness-detection-is-essential-for-biometric-technology%2F&psig=AOvVaw21VZ8bsr4619DkHdFU0wVD&ust=1611252511816000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDz-MSNq-4CFQAAAAAdAAAAABAD)
+ ![Liveness Detecion](https://www.idmerit.com/wp-content/uploads/2018/09/Copy-of-personal-information.jpg)
  
  ## Pre-requisites and download links
  
