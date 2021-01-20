@@ -1,0 +1,7 @@
+videos is our input folder which we are going to give to the model to train it.
+
+Create a video of yourself, walking around your space for 20-30 seconds. 
+Store it inside this folder with a name real.mp4.
+
+Then, hold the real.mp4 folder against your laptop/computer's camera (do not show your real face to cam)
+Record another video in the above manner. Save it in this same folder with a name fake.mp4

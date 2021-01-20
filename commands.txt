@@ -1,0 +1,28 @@
+fake image extraction :
+
+python gather_examples.py --input videos/fake.mp4 --output dataset/fake --detector face_detector --skip 1
+
+real image extraction :
+
+python gather_examples.py --input videos/real.mp4 --output dataset/real --detector face_detector --skip 4
+
+extracting png and training accuracy (plot.png) :
+
+python train.py --dataset dataset --model liveness.model --le le.pickle
+
+last run:
+
+s:
+cd projects/liveness detection
+activate live
+python liveness_main.py --model liveness.model --le le.pickle --detector face_detector
+
+Install Packages:
+
+s:
+cd projects/liveness detection
+activate live
+conda install -c conda-forge dlib
+
+pip install -r req.txt
+pipwin install pyaudio

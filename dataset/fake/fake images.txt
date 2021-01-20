@@ -1,0 +1,3 @@
+This folder contains all the extracted images from the fake.mp4 folder.
+
+You can delete this file after extracting fake.mp4 folder with the command given.
