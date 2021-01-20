@@ -4,7 +4,9 @@
  ## Pre-requisites and download links
  
  Python - https://www.python.org/downloads/
+ 
  PIP
+ 
  Anaconda - https://www.anaconda.com/products/individual#Downloads
  
  
