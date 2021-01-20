@@ -30,15 +30,8 @@ If the user is "un-authorized" i.e., fake:
  Python - https://www.python.org/downloads/ \
  PIP \
  Anaconda - https://www.anaconda.com/products/individual#Downloads \
+ Tip: You won't need to seperately install python if you download the anaconda software.
  
- 
-## Check whether your pip version is up-to-date
-See the pip-list.txt file to check all the package versions, which i have installed for my project.
-```python
-(live) C:\Users\LvlyPavi>pip --version
-pip 20.3.3 from D:\Users\LvlyPavi\anaconda3\envs\live\lib\site-packages\pip (python 3.8)
-```
-
 ## Clone/Download my git repository
 ```
 1.  On GitHub, navigate to the main page of the repository.
@@ -74,6 +67,13 @@ Open the windows command prompt by searching in windoes search (or) Press "win+R
 ```
 > activate virtual-env-name
 ex:> activate live
+```
+ 
+## Check whether your pip version is up-to-date
+See the pip-list.txt file to check all the package versions, which i have installed for my project.
+```python
+(live) C:\Users\LvlyPavi>pip --version
+pip 20.3.3 from D:\Users\LvlyPavi\anaconda3\envs\live\lib\site-packages\pip (python 3.8)
 ```
 
 ## Install all the required packages in the anaconda virtual environment
