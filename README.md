@@ -1,18 +1,18 @@
 # LivenessAuthentication
 
- Liveness Authentication, an anti-spoofing liveness detection mechanism distinguishes live person in front of camera from spoofing attacks such as photos, videos or masks also fraud prevention for face detection in general. If the user is un-authorized, the device gets locked and a mail is initiated which includes a snapshot, location, computer name and ip-address of the Intruder. Liveness Authenticator helps you in securing your device in most possible ways.
+Liveness Authentication, an anti-spoofing liveness detection mechanism distinguishes live person in front of camera from spoofing attacks such as photos, videos or masks also fraud prevention for face detection in general. If the user is un-authorized, the device gets locked and a mail is initiated which includes a snapshot, location, computer name and ip-address of the Intruder. Liveness Authenticator helps you in securing your device in most possible ways.
  
- <span style="display:block;align:center">![Liveness Detecion](https://fcw.com/-/media/GIG/EDIT_SHARED/Identity/facialrecogalgorithm.jpg)</span>
+<img align="center" src="https://fcw.com/-/media/GIG/EDIT_SHARED/Identity/facialrecogalgorithm.jpg" alt="LivenessAuthentication">
  
- ## Pre-requisites and download links
+## Pre-requisites and download links
  
  Python - https://www.python.org/downloads/ \
  PIP \
  Anaconda - https://www.anaconda.com/products/individual#Downloads \
  
  
- ## Check whether your pip version is up-to-date
- See the pip-list.txt file to check all the package versions, which i have installed for my project.
+## Check whether your pip version is up-to-date
+See the pip-list.txt file to check all the package versions, which i have installed for my project.
 ```python
 (live) C:\Users\LvlyPavi>pip --version
 pip 20.3.3 from D:\Users\LvlyPavi\anaconda3\envs\live\lib\site-packages\pip (python 3.8)
