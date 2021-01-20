@@ -50,29 +50,56 @@ Easiest way to create a virtual environment in anaconda is using the ***Anaconda
 ## Activate the anaconda virtual environment
 Open the windows command prompt by searching in windoes search (or) Press "win+R", type cmd, hit enter... And there you gooo...
 ```
-activate virtual-env-name
-ex: activate live
+> activate virtual-env-name
+ex:> activate live
 ```
 
 ## Install all the required packages in the anaconda virtual environment
 1.  Firstly, Navigate to the github cloned repository folder. 
     Ex:
     ```
-    s:
-    cd projects/liveness detection
+    > s:
+    > cd projects/liveness detection
     ```
 2.  Install the requirements.txt file, which is already inside the folder. (Check the pip-list.txt file, and install the particular version incase you face any error.)
     ```
-    pip install -r requirements.txt
-    pipwin install pyaudio
+    > pip install -r requirements.txt
+    > pipwin install pyaudio
     ```
     PyAudio module gives us trouble if we try installing it through the traditional "pip install pyaudio" way. So, just install pyaudio and portaudio using this command: "pipwin     install pyaudio"
+    
 3.  **Crucial Information** : Dlib module also gives us lot of trouble when installing it in windows. Hence, we use anaconda environment to get this module correctly.
     Follow the procedure below:
     ```
-    conda update anaconda
-    conda install -c conda-forge dlib
+    > conda update anaconda
+    > conda install -c conda-forge dlib
     ```
 4.  What??? Do you need more modules?? 
     Congrats !!! On successful installation of all the requirements !!! Don't stop right here. Go ahead to complete our project.
   
+## Input to our Liveness Authenticator
+```
+You will need to take 2 videos of yourself as an input i.e., to make our dataset.
+
+videos is our input folder which we are going to give to the model to train it.
+
+1.  Create a video of yourself, walking around your space for 20-30 seconds. 
+    Store it inside videos folder with a name real.mp4.
+
+2.  Then, hold the real.mp4 folder against your laptop/computer's camera (do not show your real face to cam for best results)
+    Record another video in the above manner. Save it in this same folder with a name fake.mp4
+```
+
+## Building OUR ""Dataset""
+```
+As of now, we already have 2 input videos for training. Let's go ahead and extract images from the input videos we have in the videos folder.
+Make sure you have already navigated to the folder where you have the project files.
+Let's divide the extraction process into 2 steps (real and fake) :
+1.  Fake images extraction:
+    > python gather_examples.py --input videos/fake.mp4 --output dataset/fake --detector face_detector --skip 1
+    Your fake images extraction process will begin when you hit enter. Make sure you have a folder named dataset which inturn contains a folder named fake (orelse you may face       errors). 
+    Wait for the process to complete. Check your "dataset/fake/" folder for images.
+2.  Real images extraction:
+    > python gather_examples.py --input videos/real.mp4 --output dataset/real --detector face_detector --skip 4
+    Wait for the process to complete. Check your "dataset/real/" folder for images.
+```
