@@ -1,7 +1,8 @@
 # LivenessAuthentication
+
  Liveness Authentication, an anti-spoofing liveness detection mechanism distinguishes live person in front of camera from spoofing attacks such as photos, videos or masks also fraud prevention for face detection in general. If the user is un-authorized, the device gets locked and a mail is initiated which includes a snapshot, location, computer name and ip-address of the Intruder. Liveness Authenticator helps you in securing your device in most possible ways.
  
- ![Liveness Detecion](https://www.idrnd.ai/wp-content/uploads/2019/08/facespoofing-blog-pic-e1565002975396.png)
+                               ![Liveness Detecion](https://www.idrnd.ai/wp-content/uploads/2019/08/facespoofing-blog-pic-e1565002975396.png)
  
  ## Pre-requisites and download links
  
@@ -66,3 +67,12 @@ ex: activate live
     pipwin install pyaudio
     ```
     PyAudio module gives us trouble if we try installing it through the traditional "pip install pyaudio" way. So, just install pyaudio and portaudio using this command: "pipwin     install pyaudio"
+3.  **Crucial Information** : Dlib module also gives us lot of trouble when installing it in windows. Hence, we use anaconda environment to get this module correctly.
+    Follow the procedure below:
+    ```
+    conda update anaconda
+    conda install -c conda-forge dlib
+    ```
+4.  What??? Do you need more modules?? 
+    Congrats !!! On successful installation of all the requirements !!! Don't stop right here. Go ahead to complete our project.
+  
