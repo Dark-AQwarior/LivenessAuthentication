@@ -1,4 +1,4 @@
-# LivenessAuthentication
+# Liveness Authentication
 
 Liveness Authentication, an anti-spoofing liveness detection mechanism distinguishes live person in front of camera from spoofing attacks such as photos, videos or masks also fraud prevention for face detection in general. If the user is un-authorized, the device gets locked and a mail is initiated which includes a snapshot, location, computer name and ip-address of the Intruder. Liveness Authenticator helps you in securing your device in most possible ways.
  
@@ -88,7 +88,8 @@ videos is our input folder which we are going to give to the model to train it.
 1.  Create a video of yourself, walking around your space for 20-30 seconds. 
     Store it inside videos folder with a name real.mp4.
 
-2.  Then, hold the real.mp4 folder against your laptop/computer's camera (do not show your real face to cam for best results)
+2.  Then, hold the real.mp4 video against your laptop/computer's camera.
+    Tip: Do not show your real face to the camera for best results.
     Record another video in the above manner. Save it in this same folder with a name fake.mp4
 ```
 
