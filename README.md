@@ -29,6 +29,7 @@ pip 20.3.3 from D:\Users\LvlyPavi\anaconda3\envs\live\lib\site-packages\pip (pyt
 5.  Change the current working directory to the location where you want the cloned directory.
 6.  Type git clone, and then paste the URL you copied earlier.
         $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+        
 7. Press Enter to create your local clone.
         $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
         > Cloning into `Spoon-Knife`...
@@ -99,12 +100,16 @@ Make sure you have already navigated to the folder where you have the project fi
 ```
 Let's divide the extraction process into 2 steps (real and fake) :
 1.  Fake images extraction:
+
     > python gather_examples.py --input videos/fake.mp4 --output dataset/fake --detector face_detector --skip 1
+    
     Your fake images extraction process will begin when you hit enter. 
     Make sure you have a folder named dataset which inturn contains a folder named fake (orelse you may face errors). 
     Wait for the process to complete. Check your "dataset/fake/" folder for images.
 2.  Real images extraction:
+
     > python gather_examples.py --input videos/real.mp4 --output dataset/real --detector face_detector --skip 4
+    
     Wait for the process to complete. Check your "dataset/real/" folder for images.
 ```
 
