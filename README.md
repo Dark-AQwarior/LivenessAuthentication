@@ -1,11 +1,30 @@
 # Liveness Authentication
 
-Liveness Authentication, an anti-spoofing liveness detection mechanism distinguishes live person in front of camera from spoofing attacks such as photos, videos or masks also fraud prevention for face detection in general. If the user is un-authorized, the device gets locked and a mail is initiated which includes a snapshot, location, computer name and ip-address of the Intruder. Liveness Authenticator helps you in securing your device in most possible ways.
- 
+Liveness Authentication, an anti-spoofing liveness detection mechanism distinguishes live person in front of camera from spoofing attacks such as photos, videos or masks also fraud prevention for face detection in general. Face recognition systems are becoming more prevalent than ever. From face recognition on your iPhone/smartphone, to face recognition for mass surveillance in China, face recognition systems are being utilized everywhere. However, face recognition systems are easily fooled by “spoofing” and “non-real” faces. Face recognition systems can be circumvented simply by holding up a photo of a person (whether printed, on a smartphone, etc.) to the face recognition camera. In order to make face recognition systems more secure, we need to be able to detect such fake/non-real faces — liveness detection is the term used to refer to such algorithms. For the purpose of this project, we’ll be treating liveness detection as a binary classification problem.
+
 <p align="center">
   <img  src="https://fcw.com/-/media/GIG/EDIT_SHARED/Identity/facialrecogalgorithm.jpg" alt="LivenessAuthentication">
 </p>
- 
+
+## Features
+If the user is "authorized" i.e., real:
+```
+1.  Green color box is drawn on the python frame including 'Authorized' to recognize easily.
+2.  Voice assistance provided for confirmation.
+3.  Access Granted
+```
+If the user is "un-authorized" i.e., fake:
+```
+1.  Red color box is drawn on the python frame including 'Unauthorized' to recognize easily.
+2.  Voice assistance provided for confirmation.
+3.  Email will be sent to the owner specifying the following details of the Intruder:
+       (I)   Snapshot, 
+       (II)  Computer name,
+       (III) The ip-address, and
+       (IV)  Location
+4.  The device will be locked, and the intruder cannot access any files.
+```
+
 ## Pre-requisites and download links
  
  Python - https://www.python.org/downloads/ \
