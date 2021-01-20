@@ -92,7 +92,7 @@ videos is our input folder which we are going to give to the model to train it.
     Record another video in the above manner. Save it in this same folder with a name fake.mp4
 ```
 
-## Building OUR ""Dataset""
+## Building OUR "Dataset"
 As of now, we already have 2 input videos for training. Let's go ahead and extract images from the input videos we have in the videos folder.
 Make sure you have already navigated to the folder where you have the project files.
 ```
@@ -106,3 +106,17 @@ Let's divide the extraction process into 2 steps (real and fake) :
     > python gather_examples.py --input videos/real.mp4 --output dataset/real --detector face_detector --skip 4
     Wait for the process to complete. Check your "dataset/real/" folder for images.
 ```
+
+## Extracting graph and training accuracy (plot.png) :
+The training history plot shows accuracy and loss curves so we can assess our model (i.e. over/underfitting). We will train our network for 50 epochs.
+```
+> python train.py --dataset dataset --model liveness.model --le le.pickle
+```
+After running the above code, look for plot.png in the same folder of the project. You can find a graphical represetation of the training accuracy, training loss, accuracy and loss computed on the validation set etc., 
+As of my results show, I'm able to obtain 100% liveness detection accuracy on the validation set with limited overfitting!
+
+## Finally, running our code
+```
+> python liveness_main.py --model liveness.model --le le.pickle --detector face_detector
+```
+Hope you can see yourself after you hit enter!!!
