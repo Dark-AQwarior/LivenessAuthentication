@@ -2,9 +2,7 @@
 
 Liveness Authentication, an anti-spoofing liveness detection mechanism distinguishes live person in front of camera from spoofing attacks such as photos, videos or masks also fraud prevention for face detection in general. Face recognition systems are becoming more prevalent than ever. From face recognition on your iPhone/smartphone, to face recognition for mass surveillance in China, face recognition systems are being utilized everywhere. However, face recognition systems are easily fooled by “spoofing” and “non-real” faces. Face recognition systems can be circumvented simply by holding up a photo of a person (whether printed, on a smartphone, etc.) to the face recognition camera. In order to make face recognition systems more secure, we need to be able to detect such fake/non-real faces — liveness detection is the term used to refer to such algorithms. For the purpose of this project, we’ll be treating liveness detection as a binary classification problem.
 
-<p align="center">
-  <img  src="https://i.pinimg.com/originals/7c/d5/3d/7cd53d36d121d839da9600ca055b01db.gif">
-</p>
+![Alt text](https://i.pinimg.com/originals/7c/d5/3d/7cd53d36d121d839da9600ca055b01db.gif)
 
 ## Features
 If the user is "authorized" i.e., real:
